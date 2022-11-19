@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <title>CARBOOK</title>
+  </head>
+  <body>
+    <!-- ---------------------------- START HEADER ----------------------------- -->
+    <header class="header">
+      <!-- HEADER CONTAINER  -->
+      <div class="container">
+        <div class="logo">
+          <a href="./home.html">
+            <span class="logo-car">Car</span>
+            <span class="logo-green">Book</span>
+          </a>
+        </div>
+        <nav class="navBarCollapse">
+          <ul class="navList">
+            <li class="listItem">
+              <a href="./home.html">Home</a>
+            </li>
+            <li class="listItem">
+              <a href="./about.html">About</a>
+            </li>
+            <li class="listItem">
+              <a href="./services.html">Services</a>
+            </li>
+            <li class="listItem">
+              <a href="./pricing.html">Pricing</a>
+            </li>
+            <li class="listItem">
+              <a href="./cars.html">Cars</a>
+            </li>
+            <li class="listItem">
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li class="listItem">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobileMenu">
+          <i class="fa-solid fa-bars"></i>
+          <span>Menu</span>
+        </div>
+      </div>
+      <!-- HEADER CONTAINER -->
+    </header>
+    <!-- ----------------------------- END HEADER ------------------------------ -->
+    <main>
+      <!-- -------------------------- HOME-BASE SECTION START -------------------------- -->
+      <section class="home-base">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="content">
+            <h2>Fast & Easy Way To Rent A Car</h2>
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts
+            </p>
+            <div class="video">
+              <div class="playButton">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="video-title">
+                <span class="hyphen"></span>
+                <span class="videoText">Easy steps for renting a car</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="skew"></span>
+      </section>
+      <!-- -------------------------- HOME-BASE SECTION END-------------------------- -->
+      <!-- -------------------------- HOME-RENT SECTION START-------------------------- -->
+      <section class="home-rent">
+        <div class="container">
+          <div class="cards">
+            <div class="left-card">
+              <form class="rent-form" action="">
+                <h2 class="form-title">Make your trip</h2>
+                <div class="pickup-loc">
+                  <label for="">Pick-up location</label>
+                  <input
+                    type="text"
+                    placeholder="City, Airport, Station, etc"
+                  />
+                </div>
+                <div class="dropoff-loc">
+                  <label for="">Drop-off location</label>
+                  <input
+                    type="text"
+                    placeholder="City, Airport, Station, etc"
+                  />
+                </div>
+                <div class="rent-date">
+                  <div>
+                    <label for="">Pick-up date</label>
+                    <input
+                      type="text"
+                      placeholder="Date"
+                      onfocus="(this.type='date')"
+                      onblur="(
+                  this.type='text')"
+                    />
+                  </div>
+                  <div>
+                    <label for="">Drop-off date</label>
+                    <input
+                      type="text"
+                      placeholder="Date"
+                      onfocus="(this.type='date')"
+                      onblur="(
+                    this.type='text')"
+                    />
+                  </div>
+                </div>
+                <label for="">Pick-up time</label>
+                <input class="time" type="text" placeholder="Time" />
+                <a class="submitbtn" href="">Rent A Car Now</a>
+              </form>
+            </div>
+            <div class="rent-tools">
+              <div class="rent-content">
+                <h2 class="tool-title">Better Way to Rent Your Perfect Cars</h2>
+                <div class="tool-icons">
+                  <div class="icon-content">
+                    <div class="icon-style">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span class="icon-text">Choose Your Pickup Location</span>
+                  </div>
+                  <div class="icon-content">
+                    <div class="icon-style">
+                      <i class="fa-regular fa-handshake"></i>
+                    </div>
+                    <span class="icon-text">Select the Best Deal</span>
+                  </div>
+                  <div class="icon-content">
+                    <div class="icon-style">
+                      <i class="fa-solid fa-taxi"></i>
+                    </div>
+                    <span class="icon-text"
+                      >Reserve Your Rental <br />
+                      Car</span
+                    >
+                  </div>
+                </div>
+                <a class="rent-button" href="">Reserve Your Perfect Car</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------ HOME-RENT SECTION END ------------------------ -->
+
+      <!-- ------------------------- CARDS SECTION START ------------------------- -->
+      <section class="home-cards">
+        <div class="container">
+          <h4 class="cars-title">What we offer</h4>
+          <h2 class="cars-info">Feeatured Vehicles</h2>
+          <div class="car-cards">
+            <div class="cards">
+              <div class="card">
+                <img src="./assets/images/cars/car-1.jpg" alt="car" />
+                <div class="text">
+                  <a href="#" class="car-name">Mustang</a>
+                  <p class="pricing">
+                    <span class="brand">Ford</span>
+                    <span class="price">$500 <span>/day</span></span>
+                  </p>
+                  <div class="booking-buttons">
+                    <a href="#" class="book-now">Book Now</a>
+                    <a href="#" class="details">Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/cars/car-2.jpg" alt="car" />
+                <div class="text">
+                  <a href="#" class="car-name">SLC Class Sedan</a>
+                  <p class="pricing">
+                    <span class="brand">Mercedes</span>
+                    <span class="price">$500<span>/day</span></span>
+                  </p>
+                  <div class="booking-buttons">
+                    <a href="#" class="book-now">Book Now</a>
+                    <a href="#" class="details">Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/cars/car-3.jpg" alt="car" />
+                <div class="text">
+                  <a href="#" class="car-name">Range Rover SUV</a>
+                  <p class="pricing">
+                    <span class="brand">Land Rover</span>
+                    <span class="price">$500<span>/day</span></span>
+                  </p>
+                  <div class="booking-buttons">
+                    <a href="#" class="book-now">Book Now</a>
+                    <a href="#" class="details">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------- CARDS SECTION END -------------------------- -->
+
+      <!-- ------------------------- HOME-ABOUT SECTION START -------------------------- -->
+      <section class="home-about">
+        <div class="container">
+          <div class="about-content">
+            <div class="image"></div>
+            <div class="about-info">
+              <h4 class="about-info-heading">About us</h4>
+              <h2 class="about-info-title">Welcome to Carbook</h2>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <p>
+                On her way she met a copy. The copy warned the Little Blind
+                Text, that where it came from it would have been rewritten a
+                thousand times and everything that was left from its origin
+                would be the word "and" and the Little Blind Text should turn
+                around and return to its own, safe country. A small river named
+                Duden flows by their place and supplies it with the necessary
+                regelialia. It is a paradisematic country, in which roasted
+                parts of sentences fly into your mouth.
+              </p>
+              <a href="#" class="about-search">Search Vehicle</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------- HOME-ABOUT SECTION END ------------------------ -->
+
+      <!-- --------------------- HOME-SERVICES SECTION START --------------------- -->
+      <section class="home-services">
+        <div class="container">
+          <div class="home-services-heading">
+            <h4 class="services-title">Services</h4>
+            <h2 class="services-info">Our Latest Services</h2>
+          </div>
+          <div class="services-cards">
+            <div class="service-card">
+              <span class="services-icon">
+                <i class="fa-solid fa-ring"></i>
+              </span>
+              <div class="services-text">
+                <h3>Wedding Ceremony</h3>
+                <p class="service-info">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+            <div class="service-card">
+              <span class="services-icon">
+                <i class="fa-solid fa-truck"></i>
+              </span>
+              <div class="services-text">
+                <h3>City Transfer</h3>
+                <p class="service-info">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+            <div class="service-card">
+              <span class="services-icon">
+                <i class="fa-solid fa-car"></i>
+              </span>
+              <div class="services-text">
+                <h3>Airport Transfer</h3>
+                <p class="service-info">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+            <div class="service-card">
+              <span class="services-icon">
+                <i class="fa-solid fa-truck"></i>
+              </span>
+              <div class="services-text">
+                <h3>Whole City Tour</h3>
+                <p class="service-info">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------- HOME-SERVICES SECTION END ---------------------- -->
+
+      <!-- ---------------------- HOME DRIVER SECTION START ---------------------- -->
+      <section class="home-driver">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="home-driver-content">
+            <div class="content-info">
+              <h2 class="content-title">
+                Do You Want To Earn With Us? So Don't Be Late.
+              </h2>
+              <a href="" class="driver-button">Become A Driver</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------- HOME DRIVER SECTION END ----------------------- -->
+
+      <!-- ------------------- HOME TESTIMONIAL SECTION START -------------------- -->
+      <section class="home-testimonial">
+        <div class="container">
+          <div class="testimonial-heading">
+            <h4 class="title">TESTIMONIAL</h4>
+            <h2 class="testimonial-header">Happy Clients</h2>
+          </div>
+
+          <div class="client-cards">
+            <div class="client-card">
+              <div class="client-image">
+                <img src="./assets/images/testimonial/client_1.jpg" alt="" />
+              </div>
+              <div class="client-info">
+                <p class="text">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="client-name">Roger Scott</p>
+                <p class="client-field">Web Developer</p>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-image">
+                <img src="./assets/images/testimonial/client_2.jpg" alt="" />
+              </div>
+              <div class="client-info">
+                <p class="text">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="client-name">Paul Gill</p>
+                <p class="client-field">UI Designer</p>
+              </div>
+            </div>
+            <div class="client-card">
+              <div class="client-image">
+                <img src="./assets/images/testimonial/client_3.jpg" alt="" />
+              </div>
+              <div class="client-info">
+                <p class="text">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="client-name">Braiden Lucas</p>
+                <p class="client-field">System Analyst</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------- HOME TESTIMONIAL SECTION END -------------------- -->
+
+      <!-- ----------------------- HOME BLOG SECTION START ----------------------- -->
+      <section class="home-blog">
+        <div class="container">
+          <div class="blog-heading">
+            <h4 class="title">BLOG</h4>
+            <h2 class="blog-header">Recent Blog</h2>
+          </div>
+          <div class="blog-cards">
+            <div class="blog-card">
+              <a class="img" href="#">
+                <img src="./assets/images/blog/blog_1.jpg" alt="blog" />
+              </a>
+              <div class="blog-text">
+                <div class="blog-date">
+                  <span class="date">
+                    <a href="#">Oct. 29 2019</a>
+                  </span>
+                  <span class="admin">
+                    <a href="#">Admin</a>
+                  </span>
+                  <span class="chat">
+                    <a href="#">
+                      <i class="fa-solid fa-message"></i>
+                      3
+                    </a>
+                  </span>
+                </div>
+                <h3 class="detail">
+                  <a href="#">Why Lead Generation is Key for Business Growth</a>
+                </h3>
+                <p class="read-more">
+                  <a href="#">Read more</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <a class="img" href="#">
+                <img src="./assets/images/blog/blog_2.jpg" alt="logo" />
+              </a>
+              <div class="blog-text">
+                <div class="blog-date">
+                  <span class="date">
+                    <a href="#">Oct. 29 2019</a>
+                  </span>
+                  <span class="admin">
+                    <a href="#">Admin</a>
+                  </span>
+                  <span class="chat">
+                    <a href="#">
+                      <i class="fa-solid fa-message"></i>
+                      3
+                    </a>
+                  </span>
+                </div>
+                <h3 class="detail">
+                  <a href="#">Why Lead Generation is Key for Business Growth</a>
+                </h3>
+                <p class="read-more">
+                  <a href="#">Read more</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <a class="img" href="#">
+                <img src="./assets/images/blog/blog_3.jpg" alt="logo" />
+              </a>
+              <div class="blog-text">
+                <div class="blog-date">
+                  <span class="date">
+                    <a href="#">Oct. 29 2019</a>
+                  </span>
+                  <span class="admin">
+                    <a href="#">Admin</a>
+                  </span>
+                  <span class="chat">
+                    <a href="#">
+                      <i class="fa-solid fa-message"></i>
+                      3
+                    </a>
+                  </span>
+                </div>
+                <h3 class="detail">
+                  <a href="#">Why Lead Generation is Key for Business Growth</a>
+                </h3>
+                <p class="read-more">
+                  <a href="#">Read more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------ HOME BLOG SECTION END ------------------------- -->
+
+      <!-- --------------------- HOME COUNTER SECTION START ---------------------- -->
+      <section class="home-counter">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="counter same">
+            <div class="year">
+              <span class="number">60</span>
+              <div class="counter-text">
+                <span>Year</span>
+                <span>Experienced</span>
+              </div>
+            </div>
+            <div class="same">
+              <span class="number">1,090</span>
+              <div class="counter-text">
+                <span>Total</span>
+                <span>Cars</span>
+              </div>
+            </div>
+            <div class="same">
+              <span class="number">2,590</span>
+              <div class="counter-text">
+                <span>Happy</span>
+                <span>Customers</span>
+              </div>
+            </div>
+            <div class="same">
+              <span class="number">67</span>
+              <div class="counter-text">
+                <span>Total</span>
+                <span>Branches</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------- HOME COUNTER SECTION END ----------------------- -->
+    </main>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            MAIN SECTION END                             -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links"></div>
+        <div class="footer-copyrights">
+          <p>Copyright © 2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i>by <a href=""></a></p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/6a655e16e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

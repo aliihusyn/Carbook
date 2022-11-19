@@ -1,0 +1,179 @@
+.home-rent {
+  position: relative;
+  padding: 6em 0;
+  background-color: #f8f9fa;
+  .container {
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -315px;
+      .left-card {
+        background-color: #1089ff;
+        border-radius: 5px;
+        box-shadow: 0px 5px 12px -1px rgb(0 0 0 / 6%);
+        width: 33.3%;
+        height: 100%;
+        .rent-form {
+          display: flex;
+          flex-direction: column;
+          padding: 30px;
+          h2 {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+          }
+          .pickup-loc {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+          }
+          .dropoff-loc {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+          }
+          .rent-date {
+            display: flex;
+            div {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 16px;
+              margin-right: 8px;
+            }
+          }
+          .time {
+            margin-bottom: 16px;
+          }
+          .submitbtn {
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+            padding: 16px 24px;
+            border-radius: 3px;
+            margin-bottom: 16px;
+            background: #01d28e;
+            border: 1px solid #01d28e;
+            font-weight: 400;
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+            height: 57px;
+          }
+        }
+      }
+      .rent-tools {
+        display: flex;
+        align-items: center;
+        width: 66.7%;
+        .rent-content {
+          padding: 64px 48px;
+          box-shadow: 0px 5px 12px -1px rgb(0 0 0 / 3%);
+          background-color: #fff;
+          border-top-right-radius: 0.25rem;
+          border-bottom-right-radius: 0.25rem;
+          .tool-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.8);
+            text-align: left;
+          }
+          .tool-icons {
+            display: flex;
+            //flex-wrap: wrap;
+            .icon-content {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              .icon-style {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                  font-size: 40px;
+                  color: #1089ff;
+                }
+              }
+              .icon-text {
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                line-height: 1.5;
+                color: rgba(0, 0, 0, 0.8);
+                text-align: center;
+              }
+            }
+          }
+          .rent-button {
+            display: inline-block;
+            background: #1089ff;
+            border: 1px solid #1089ff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 15px;
+            padding: 1rem 1.5rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// 768px
+@media (max-width: 768px) {
+  .home-rent {
+    .container {
+      padding: 0 15px;
+      margin: 0 auto;
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .left-card {
+          width: 77%;
+        }
+      }
+      .rent-tools {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+  // 576px
+  @media (max-width: 576px) {
+    .home-rent {
+      .container {
+        padding: 0 15px;
+        margin: 0 auto;
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          .left-card {
+            width: 100%;
+          }
+          .rent-tools {
+            display: flex;
+            align-items: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

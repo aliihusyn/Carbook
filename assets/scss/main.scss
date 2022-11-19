@@ -1,0 +1,17 @@
+// Default codes
+@import "./base";
+@import "./components/global";
+
+// Import components
+@import "./components/header";
+
+//Import pages
+@import "./pages/home-sections/home-base";
+@import "./pages/home-sections/home-rent";
+@import "./pages/home-sections/home-cards";
+@import "./pages/home-sections/home-about";
+@import "./pages/home-sections/home-services";
+@import "./pages/home-sections/home-driver";
+@import "./pages/home-sections/home-testimonial";
+@import "./pages/home-sections/home-blog";
+@import "./pages/home-sections/home-counter";
