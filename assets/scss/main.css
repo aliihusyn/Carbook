@@ -127,15 +127,86 @@ input::-webkit-input-placeholder {
 .header .container .navBarCollapse .navList .listItem a:hover {
   color: #01d28e;
 }
-.header .container .mobileMenu {
-  color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.header .container .burgerMenu {
   display: none;
 }
-.header .container .mobileMenu .fa-bars {
-  font-size: 19px;
+.header .container .burgerMenu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.header .container .burgerMenu .menu li {
+  padding: 0 121px;
+}
+.header .container .burgerMenu .menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.header .container .burgerMenu .menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .container .burgerMenu #menu-toggle {
+  display: none;
+}
+.header .container .burgerMenu .menu-button,
+.header .container .burgerMenu .menu-button::before,
+.header .container .burgerMenu .menu-button::after {
+  display: block;
+  background-color: #000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+.header .container .burgerMenu .menu-button::before {
+  content: "";
+  margin-top: 12px;
+}
+.header .container .burgerMenu .menu-button::after {
+  content: "";
+  margin-top: 21px;
+}
+.header .container .burgerMenu #menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+}
+.header .container .burgerMenu #menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+.header .container .burgerMenu #menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+}
+.header .container .burgerMenu span {
+  font-size: 20px;
+  padding-left: 5px;
+  margin-top: -10;
 }
 
 @media (max-width: 576px) {
@@ -166,10 +237,278 @@ input::-webkit-input-placeholder {
   .header .container .navBarCollapse {
     display: none;
   }
-  .header .container .mobileMenu {
+}
+@media (max-width: 992px) {
+  .header .container .burgerMenu {
     display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .container .burgerMenu .menu-button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .container .burgerMenu .menu {
+    position: absolute;
+    top: 21px;
+    margin-top: 50px;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .container .burgerMenu #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .header .container .burgerMenu #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    -webkit-transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .header .container .burgerMenu .menu > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #000;
+  }
+  .header .container .burgerMenu .menu > li a {
+    color: #fff;
+  }
+  .header .container .burgerMenu .menu > li:not(:last-child) {
+    border-bottom: 1px solid #fff;
   }
 }
+.footer {
+  background: #000;
+  padding: 7em 0;
+}
+.footer .container .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.footer .container .footer-links .column-carbook {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .container .footer-links .column-carbook .column-carbook-heading {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.footer .container .footer-links .column-carbook .column-carbook-heading .ft-book {
+  color: #01d28e;
+  margin-left: -4px;
+}
+.footer .container .footer-links .column-carbook .carbook-text {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.footer .container .footer-links .column-carbook .column-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+.footer .container .footer-links .column-carbook .column-social a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer .container .footer-links .column-carbook .column-social a i {
+  color: #fff;
+  font-size: 26px;
+}
+.footer .container .footer-links .column-info {
+  width: 25%;
+  padding: 0 15px 24px 63px;
+}
+.footer .container .footer-links .column-info .column-heading {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.footer .container .footer-links .column-info .info-details {
+  margin-bottom: 1rem;
+}
+.footer .container .footer-links .column-info .info-details li {
+  padding: 8px 0;
+}
+.footer .container .footer-links .column-info .info-details li a {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer .container .footer-links .column-support {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .container .footer-links .column-support .column-heading {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.footer .container .footer-links .column-support .support-details {
+  margin-bottom: 1rem;
+}
+.footer .container .footer-links .column-support .support-details li {
+  padding: 8px 0;
+}
+.footer .container .footer-links .column-support .support-details li a {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer .container .footer-links .column-question {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .container .footer-links .column-question .column-heading {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.footer .container .footer-links .column-question .question-details {
+  margin-bottom: 1rem;
+}
+.footer .container .footer-links .column-question .question-details li {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.footer .container .footer-links .column-question .question-details li i {
+  width: 40px;
+  display: table-cell;
+  vertical-align: top;
+  font-size: 18px;
+  padding-top: 2px;
+  color: white;
+}
+.footer .container .footer-links .column-question .question-details li a {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer .container .footer-copyrights p {
+  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.footer .container .footer-copyrights p a {
+  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .footer .container .footer-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .container .footer-links .column-carbook {
+    width: 100%;
+  }
+  .footer .container .footer-links .column-info {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .footer .container .footer-links .column-support {
+    width: 100%;
+  }
+  .footer .container .footer-links .column-question {
+    width: 100%;
+  }
+}
+.cover-page {
+  background-image: url(../images/bg-of-all-pages.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px;
+}
+.cover-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: #000000;
+  width: 100%;
+  opacity: 0.3;
+  height: 600px;
+}
+.cover-page .container {
+  width: 100%;
+  padding: 0 15px;
+}
+.cover-page .container .cover-page-content {
+  position: absolute;
+}
+
 .home-base {
   background-image: url(../images/home-bg.jpg);
   background-repeat: no-repeat;
@@ -646,8 +985,8 @@ input::-webkit-input-placeholder {
     -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
             box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
     background: #fff;
-    width: 51%;
-    margin-right: 30px;
+    width: 80%;
+    margin-right: 0;
     border-radius: 4px;
     margin-bottom: 40px;
   }

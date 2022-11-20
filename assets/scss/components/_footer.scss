@@ -1,0 +1,174 @@
+.footer {
+  background: #000;
+  padding: 7em 0;
+  .container {
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 48px;
+      .column-carbook {
+        width: 25%;
+        padding: 0 15px;
+        .column-carbook-heading {
+          color: #fff;
+          margin-bottom: 40px;
+          .ft-book {
+            color: #01d28e;
+            margin-left: -4px;
+          }
+        }
+        .carbook-text {
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 1rem;
+          line-height: 1.8;
+          font-weight: 400;
+          margin-bottom: 16px;
+        }
+        .column-social {
+          display: flex;
+          gap: 10px;
+          margin-top: 48px;
+          margin-bottom: 16px;
+          a {
+            display: block;
+            height: 50px;
+            width: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              color: #fff;
+              font-size: 26px;
+            }
+          }
+        }
+      }
+      .column-info {
+        width: 25%;
+        padding: 0 15px 24px 63px;
+        .column-heading {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        .info-details {
+          margin-bottom: 1rem;
+          li {
+            padding: 8px 0;
+            a {
+              font-size: 16px;
+              line-height: 1.8;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.8);
+            }
+          }
+        }
+      }
+      .column-support {
+        width: 25%;
+        padding: 0 15px;
+        .column-heading {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        .support-details {
+          margin-bottom: 1rem;
+          li {
+            padding: 8px 0;
+            a {
+              font-size: 16px;
+              line-height: 1.8;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.8);
+            }
+          }
+        }
+      }
+      .column-question {
+        width: 25%;
+        padding: 0 15px;
+        .column-heading {
+          color: #fff;
+          margin-bottom: 40px;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        .question-details {
+          margin-bottom: 1rem;
+          li {
+            display: table;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            i {
+              width: 40px;
+              display: table-cell;
+              vertical-align: top;
+              font-size: 18px;
+              padding-top: 2px;
+              color: white;
+            }
+            a {
+              font-size: 16px;
+              line-height: 1.8;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.8);
+            }
+          }
+        }
+      }
+    }
+    .footer-copyrights {
+      p {
+        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        margin-bottom: 16px;
+        a {
+          color: rgba(255, 255, 255, 0.7);
+          color: rgba(255, 255, 255, 0.7);
+          text-align: center;
+          font-size: 16px;
+          line-height: 1.8;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+//768px
+@media (max-width: 768px) {
+    .footer{
+        .container{
+            .footer-links{
+                flex-wrap: wrap;
+                .column-carbook{
+                    width: 100%;
+                }
+                .column-info{
+                    width: 100%;
+                    padding: 0 15px;
+
+                }
+                .column-support{
+                    width: 100%;
+                }
+                .column-question{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

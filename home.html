@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/scss/main.css" />
-    <title>CARBOOK</title>
+    <title>Carbook</title>
   </head>
   <body>
     <!-- ---------------------------- START HEADER ----------------------------- -->
@@ -43,8 +43,20 @@
             </li>
           </ul>
         </nav>
-        <div class="mobileMenu">
-          <i class="fa-solid fa-bars"></i>
+        <div class="burgerMenu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./cars.html">Cars</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
           <span>Menu</span>
         </div>
       </div>
@@ -515,14 +527,84 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                            MAIN SECTION END                             -->
     <!-- ----------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              FOOTER START                               -->
+    <!-- ----------------------------------------------------------------------- -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-links"></div>
+        <div class="footer-links">
+          <div class="column-carbook">
+            <h2 class="column-carbook-heading">
+              CAR
+              <span class="ft-book">BOOK</span>
+            </h2>
+            <p class="carbook-text">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+            <ul class="column-social">
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="column-info">
+            <h2 class="column-heading">Information</h2>
+            <ul class="info-details">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Term and Conditions</a></li>
+              <li><a href="#">Best Price Guarantee</a></li>
+              <li><a href="#">Privacy&Cookies Policy</a></li>
+            </ul>
+          </div>
+          <div class="column-support">
+            <h2 class="column-heading">Customer Support</h2>
+            <ul class="support-details">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Payment Option</a></li>
+              <li><a href="#">Booking Tips</a></li>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="column-question">
+            <h2 class="column-heading">Have a Questions?</h2>
+            <ul class="question-details">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">
+                  203 Fake St. Mountain View, San Francisco, California, USA
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="">+2 392 3929 210</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">info@yourdomain.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="footer-copyrights">
-          <p>Copyright © 2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i>by <a href=""></a></p>
+          <p>
+            Copyright ©2022 All rights reserved | This template is made with
+            <i class="fa-solid fa-heart"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+          </p>
         </div>
       </div>
     </footer>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               FOOTER END                                -->
+    <!-- ----------------------------------------------------------------------- -->
     <script
       src="https://kit.fontawesome.com/6a655e16e2.js"
       crossorigin="anonymous"
