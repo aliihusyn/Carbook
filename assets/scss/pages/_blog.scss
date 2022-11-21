@@ -1,0 +1,106 @@
+.blog-section {
+  padding: 6em 0;
+  .container {
+    .blog-section-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .blog-section-card {
+        padding: 0 15px;
+        width: 100%;
+        margin-bottom: 30px;
+        .img {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .blog-txt {
+          text-align: center;
+          .blog-time {
+            margin-bottom: 16px;
+            span {
+              margin-right: 5px;
+              font-size: 14px;
+              font-weight: 500;
+              a {
+                color: #1089ff;
+                line-height: 1.8;
+                transition: 0.3s all ease;
+              }
+            }
+          }
+          .blog-details {
+            margin: 8px 0 16px;
+            a {
+              color: #000000;
+              transition: 0.3s all ease;
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+          .blog-content {
+            margin-bottom: 16px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #999999;
+          }
+          .continue {
+            margin-bottom: 1rem;
+            a {
+              padding: 6px 12px;
+              background: #1089ff;
+              border: 1px solid #1089ff;
+              color: #fff;
+              font-weight: 400;
+              cursor: pointer;
+              font-weight: 400;
+              text-align: center;
+              vertical-align: middle;
+              line-height: 1.5;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+      .slider {
+        margin: 48px -15px 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .row-list {
+          li {
+            text-align: center;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            border: 1px solid #e6e6e6;
+            cursor: pointer;
+            &:hover {
+              background: #1089ff;
+              a {
+                color: #fff;
+              }
+            }
+            a {
+              color: #1089ff;
+            }
+          }
+          .active {
+            background: #1089ff;
+            color: #fff;
+            border: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+}

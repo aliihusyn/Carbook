@@ -1,0 +1,119 @@
+.pricing-base {
+  padding: 6em 0;
+  position: relative;
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    .product-section {
+      .table-section {
+        padding: 0 15px;
+        .table {
+          width: 100%;
+          min-width: 100%;
+          margin-bottom: 16px;
+          color: #212529;
+          border-collapse: collapse;
+          border-color: grey;
+          text-align: left;
+          border-spacing: 2px;
+          .table-head {
+            background: transparent;
+            line-height: 1.8;
+            font-size: 16px;
+            font-weight: 400;
+            .headings {
+              text-align: center;
+              .table-info{
+                padding: 30px 10px;
+                color: #fff;
+                border: 1px solid transparent;
+                font-weight: 500;
+                border-spacing: 2px;
+                font-size: 16px;
+                line-height: 1.8;
+              }
+              .blue {
+                background-color: #1089ff;
+
+              }
+              .gray{
+                background-color: #343a40;
+              }
+              .black{
+                background-color: #000;
+              }
+            }
+          }
+          tbody {
+            .car-img {
+              padding: 30px 0;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+              border-top: 1px solid #dee2e6;
+              img {
+                display: block;
+                width: 180px;
+                height: 100px;
+                margin: 0 auto;
+              }
+            }
+            .product-name {
+              h3 {
+                font-size: 18px;
+                line-height: 1.5;
+                color: rgba(0, 0, 0, 0.8);
+                font-weight: 400;
+                margin-bottom: 0.5rem;
+              }
+              p {
+                i {
+                  color: #01d28e;
+                }
+              }
+            }
+            .product-pricing {
+              text-align: center;
+              background: rgba(0, 0, 0, 0.05);
+              border-right: 1px solid #fff;
+              border-bottom: 1px solid #fff;
+              position: relative;
+              transition: all 0.3s ease;
+              vertical-align: middle;
+              padding: 30px 0;
+              border-top: 1px solid #dee2e6;
+              .price-rate {
+                h3 {
+                  .price-number {
+                    color: #1089ff;
+                    font-size: 20px;
+                    position: relative;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    .currency {
+                      position: absolute;
+                      top: 0;
+                      left: -10px;
+                      font-weight: 400;
+                      font-size: 14px;
+                    }
+                  }
+                  .per {
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.4);
+                    line-height: 1.5;
+                    font-weight: 400;
+                  }
+                }
+                .subheading{
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

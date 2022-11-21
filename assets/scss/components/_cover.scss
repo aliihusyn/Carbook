@@ -1,12 +1,12 @@
 .cover-page {
-    background-image: url(../images/bg-of-all-pages.jpg);
-    background-position-x: 50%;
-    background-position-y: 50%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 600px;
+  position: relative;
+  background-image: url(../images/bg-of-all-pages.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
   .overlay {
     position: absolute;
     top: 0;
@@ -16,14 +16,41 @@
     content: "";
     background: #000000;
     width: 100%;
-    opacity: .3;
+    opacity: 0.3;
     height: 600px;
   }
-  .container{
+  .container {
     width: 100%;
     padding: 0 15px;
-    .cover-page-content{
-        position: absolute;
+    height: 600px;
+    .cover-page-content {
+      height: 600px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      .cover-page-text {
+        margin-bottom: 3rem;
+        p {
+          line-height: 1.5;
+          color: white;
+          font-size: 14px;
+          margin-bottom: 20px;
+          z-index: 99;
+          text-transform: uppercase;
+          font-weight: 500;
+          .right-margin{
+            margin-right: 8px;
+          }
+        }
+        h2{
+          font-size: 44px;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    line-height: .8;
+    margin-bottom: 1rem;
+        }
+      }
     }
   }
 }
